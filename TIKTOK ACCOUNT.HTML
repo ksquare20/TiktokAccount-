@@ -1,0 +1,519 @@
+<!DOCTYPE html><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Gaming Creator Portfolio</title>
+<link rel="stylesheet" href="style.css">
+  <!-- Combined and cleaned styles -->
+   <P><style>my.highlight-blue</style></P>
+  <style>
+   *{
+    font-family: Comic Neue;
+    font-weight: 700;
+   } 
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('images/fortnite.jpg') no-repeat center center fixed;
+      background: #000 url('fortnite.jpg') no-repeat center center fixed;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #ffffff;
+    }
+
+    .intro-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 0 20px;
+
+    }
+
+    .intro-section h1 {
+      font-size: 100px;
+      margin-bottom: 0.3em;
+      color: #29c93b;
+      text-shadow: 0 0 10px #25e43f;
+    }
+
+    .intro-section h2 {
+      font-size: 1.3em;
+      margin-bottom: 1em;
+      color: #84e31d;
+    }
+
+    .intro-section p {
+      font-size: 1.1em;
+      max-width: 900px;
+      line-height: 1.6;
+      color: #13c92b;
+    }
+
+    .highlight {
+      color: #00a2ff;
+      font-weight: bold;
+    }
+
+    .highlight-blue {
+      color: #0400ff;
+      font-weight: bold;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 1.2em;
+      background-color: #4800ff;
+      color: #18b45b;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2900cc;
+    }
+
+    .quote-section {
+      display: none;
+      text-align: center;
+      padding: 40px 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .quote-section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #1a6c3f;
+    }
+
+    .gameplay-img {
+      max-width: 90%;
+      height: auto;
+      border: 4px solid #00ffff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #00ffff;
+    }
+
+    .portfolio-link {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #00a2ff;
+      color: #000;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .portfolio-link:hover {
+      background-color: #007acc;
+    }
+
+    .extra-text {
+      margin-top: 40px;
+      color: #851a07;
+      text-align: center;
+    }
+
+    .extra-text p {
+      color: #0cc124;
+      font-size: 1.1em;
+    }
+
+    .extra-text a {
+      color: #00ffff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  
+
+
+
+  <!-- INTRODUCTION SECTION -->
+  <section class="intro-section">
+    <h1>HI GAME LOVERS I'm <span class="highlight">KSQUARE</span></h1>
+    <h2>TikTok Gaming Creator 🎮</h2>
+    <p>
+      Welcome to my world of epic gameplay, viral moments, and nonstop energy! I create engaging TikTok content that showcases my passion for gaming—from clutch plays to hilarious fails. Whether you're into FPS, RPGs, or mobile madness, you're in the right place.
+      <br><br>
+      JOIN ME ON TikTok TO ENJOY CAPTIVATING MOMENTS OF GAMEPLAY SUCH AS <strong>FIFA, FC 26, FORTNITE, HITMAN,Cod</strong> AND MANY OTHER FUN GAMES.
+      <br><br>
+      FOLLOW MY TikTok ACCOUNT: 
+      <a href="https://www.tiktok.com/@ksquare2.0?_t=ZS-90T8AgRbvxR&_r=1" target="_blank">
+        @ksquare2.0
+      </a> or search: <strong>K SQUARE2.0</strong>
+    </p>
+    <button onclick="showQuote()">Enter</button>
+  </section>
+
+
+  <!-- QUOTE / SHOWCASE SECTION -->
+  <section class="quote-section" id="quoteSection">
+    <h2>Let! Dive Right Into The World Of Games 🔥</h2>
+    <img src="PAD.jpg" alt="Gameplay Screenshot" class="gameplay-img" />
+    <br />
+    <a class="portfolio-link" href="https://www.tiktok.com/@ksquare2.0?_t=ZS-90T8AgRbvxR&_r=1/" target="_blank">
+      Visit My Gaming Portfolio
+    </a>
+  </section>
+
+  <!-- EXTRA TEXT AND LINK AT THE BOTTOM -->
+  <div class="extra-text">
+    <p>MY LINK</p>
+    <a href="https://www.tiktok.com/@ksquare2.0?_t=ZS-90T8AgRbvxR&_r=1/" target="_blank">Visit My Gaming Page</a>
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    function showQuote() {
+      const introSections = document.querySelectorAll('.intro-section');
+      introSections.forEach(section => section.style.display = 'none');
+      document.getElementById('quoteSection').style.display = 'block';
+    }
+    
+  </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KSQUARE - Gaming Creator Portfolio</title>
+
+  <style>
+    /* RESET + BODY */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #000 url('fortnite.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+    }
+
+    /* NAVIGATION BAR */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      font-size: 1.6em;
+      font-weight: bold;
+      color: #00ffff;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      margin: 0 15px;
+    }
+
+    .navbar a {
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #84e31d;
+    }
+
+    /* INTRO SECTION */
+    .intro-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 0 20px;
+      scroll-margin-top: 100px;
+    }
+
+    .intro-section h1 {
+      font-size: 3em;
+      margin-bottom: 0.3em;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+    }
+
+    .intro-section h2 {
+      font-size: 1.3em;
+      margin-bottom: 1em;
+      color: #84e31d;
+    }
+
+    .intro-section p {
+      font-size: 1.1em;
+      max-width: 900px;
+      line-height: 1.6;
+      color: #d1d1d1;
+    }
+
+    .highlight {
+      color: #00a2ff;
+      font-weight: bold;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 1.2em;
+      background-color: #4800ff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2900cc;
+    }
+
+    /* QUOTE SECTION */
+    .quote-section,
+    .about-section,
+    .contact-section {
+      display: none;
+      text-align: center;
+      padding: 80px 20px;
+      background-color: rgba(0, 0, 0, 0.85);
+    }
+
+    .quote-section h2,
+    .about-section h2,
+    .contact-section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #1a6c3f;
+    }
+
+    .gameplay-img {
+      max-width: 90%;
+      height: auto;
+      border: 4px solid #00ffff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #00ffff;
+    }
+
+    .portfolio-link {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #00a2ff;
+      color: #000;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .portfolio-link:hover {
+      background-color: #007acc;
+    }
+
+    /* CONTACT FORM (placeholder) */
+    .contact-section input {
+      padding: 10px;
+      width: 300px;
+      max-width: 80%;
+      border-radius: 5px;
+      border: none;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.95);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        display: none;
+      }
+
+      .navbar ul.show {
+        display: flex;
+      }
+
+      .navbar .menu-toggle {
+        display: block;
+        color: #00ffff;
+        cursor: pointer;
+        font-size: 1.5em;
+      }
+    }
+
+    .menu-toggle {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="logo">KSQUARE</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul id="navLinks">
+      <li><a href="#introSection" onclick="showSection('intro')">Home</a></li>
+      <li><a href="#aboutSection" onclick="showSection('about')">About Us</a></li>
+      <li><a href="#contactSection" onclick="showSection('contact')">Contact</a></li>
+    </ul>
+  </nav>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1ccb16;
+    }
+
+    .about-section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: #0cc124;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .about-section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .about-section p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .about-section strong {
+      color: #000;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      .about-section h2 {
+        font-size: 1.5rem;
+      }
+
+      .about-section p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .about-section {
+        padding: 10px;
+      }
+
+      .about-section h2 {
+        font-size: 1.2rem;
+      }
+
+      .about-section p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="about-section" id="aboutSection">
+    <h2>About Me</h2>
+    <p>My goal is to hit <strong>500,000</strong> followers on TikTok by consistently posting engaging content.</p>
+  </section>
+
+</body>
+</html>
+
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section" id="contactSection">
+    <h2>Contact Me</h2>
+    <p>If you want to connect for collaborations or inquiries, enter your number below (or email me later):</p>
+    <input type="text" placeholder="Your Phone Number (08064170981)" />
+  </section>
+    
+    </a>
+  </section>
+<!-- Game Clip Section -->
+<section style="text-align: center; margin: 40px 0;">
+  <h2>🎮 CLICK TO WATCH</h2>
+
+  <!-- Video element (hidden controls initially) -->
+  <video id="gameClip" width="640" height="360" style="display: none; margin-top: 15px; margin-left: 30%;" controls>
+    <source src="FIFA.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Play Clip Button -->
+  <button id="playBtn" style="
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #1e40af;
+    color: rgb(249, 39, 39);
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    
+  ">
+    ▶ Play Clip
+  </button>
+</section>
+
+<!-- JavaScript to control the video -->
+<script>
+  const playBtn = document.getElementById('playBtn');
+  const gameClip = document.getElementById('gameClip');
+
+  playBtn.addEventListener('click', () => {
+    gameClip.style.display = 'block';   // Show the video
+    gameClip.play();                    // Play it
+    playBtn.style.display = 'none';     // Hide the button
+  });
+</script>
+
+  
+</body>
+</html>
